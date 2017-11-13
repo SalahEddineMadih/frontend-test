@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Croissant+One');
+
+
+$bg-color: #273042;
+$font-color:#fff;
+$primary-color:#008ed6;
+$dark-overlay:rgba(39,48,66,0.86);
+$icon-size:30px;
+$croissant-one: 'Croissant One', cursive;
+$font-icon-size: 21px;
+$card-font-color: #252525;
+
+
+body{
+  color:$font-color ;
+}
+
+h1 {
+  font-family: $croissant-one
+}
+
+#header-section{
+  background:url('../img/newyork-bg.jpg') no-repeat;
+  min-height:400px;
+  background-size:cover;
+  
+  .dark-overlay{
+    background-color:$dark-overlay; 
+    width:100%;
+    min-height:400px;
+
+    .navbar-light {
+     background-color:$bg-color;
+     max-height: 70px;
+
+    .dropdown-item {
+        min-width: 180px;
+    }
+
+    .navbar-brand{
+      font-family: $croissant-one;
+      color: $font-color !important;
+    }
+
+    .navbar-nav .nav-link {
+      color: $font-color !important
+    }
+
+   }
+
+    .home-inner{
+      .social{
+        .circle {
+          border-radius: 25px!important;
+        }
+
+        .fa{
+          color:$font-color ;
+          font-size:$font-icon-size;
+          border: 1px solid;
+        }
+      }
+
+      .img-city{
+        border: 3px solid #fff;
+      }
+    }
+
+    /* navbar bottom */
+   .navbar-bottom {
+      padding: 0px !important;
+      .dropdown{
+        min-width: 100px;
+        margin-right: 55% !important;
+      }  
+      .nav-item .nav-link {
+        color:$font-color;
+      }
+      .nav-item a:hover{
+        color: #e23943 !important;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+#home-section{
+  .card-title, .card-text{
+    color: $card-font-color;
+    span{
+      color:#ffcc3a;
+      font-size:12px; 
+    }
+  }
+
+  .card{
+    border-color:$font-color
+  }
+  .card img{
+    border-radius:10px
+  }
+}
+
+#main-footer{
+  background-color:$bg-color;
+  .navbar-brand{
+    color:$font-color;
+    font-family:$croissant-one;
+  }
+}
+
+
+
+@media (max-width: 576px) {
+
+h1 {font-size: 1.5rem;}
+.lead {font-size: 1rem;}
+.card{margin: 0 auto}
+#header-section .navbar-light .dropdown-menu  {
+  position: absolute;
+   left: -30%;
+  }
+
+  .dropdown-menu, .navbar-nav{position:absolute !important; z-index:99}
+  .navbar-right{right:0}
+  .navbar-left{left:30%}
+  .navbar-bottom{min-height: 40px;}
+.navbar-bottom-right{
+  position: absolute;
+    right: 0;
+}
+      
+ }
+ 
